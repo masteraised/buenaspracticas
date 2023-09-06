@@ -5,8 +5,8 @@ let userAge = 25;
 function checkUserRequisites(){
     let tieneAuto = true;
     if (userAge >= 18 && tieneAuto===true){
-        return true;
-        }else {
+        return true;}
+    else {
             return false;
         }
     }else{
