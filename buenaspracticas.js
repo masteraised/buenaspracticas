@@ -5,8 +5,9 @@ let hasCar = true;
 //Funcion de comprobacion
 function canDrive() {
     try {
-        if (userAge >= 18 && hasCar) { { return true; } }
-        else { return false; }
+        if (userAge >= 18 && hasCar)
+        { { return true; } 
+        } else { return false; }
     }
     catch {
         console.log("dato invalido")
