@@ -1,8 +1,11 @@
-let Edad_del_usuario = 25;
-function Comprobar_requisitos_del_usuario(){
-    let tieneVehiculo = true;
-    if (Edad_del_usuario >= 18){
-        if(tieneVehiculo===true){
+// Inicializamos edad del user
+let userAge = 25;
+
+//Funcion para comprobar los requisitos
+function checkUserRequisites(){
+    let tieneAuto = true;
+    if (userAge >= 18){
+        if(tieneAuto===true){
             return true;
         }else {
             return false;
@@ -11,4 +14,5 @@ function Comprobar_requisitos_del_usuario(){
         return false;
     }
 }
-console.log(Comprobar_requisitos_del_usuario());
+//Mostramos solucion en pantalla
+console.log(checkUserRequisites());
