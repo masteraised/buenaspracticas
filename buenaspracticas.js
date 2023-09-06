@@ -1,17 +1,17 @@
-// Inicializamos edad del user
+//Inicializamos variables
 let userAge = 25;
+let hasCar = true;
 
-//Funcion para comprobar los requisitos
-function checkUserRequisites(){
-    let tieneAuto = true;
-    if (userAge >= 18 && tieneAuto===true){
-        return true;}
-    else {
-            return false;
-        }
-    }else{
-        return false;
+//Funcion de comprobacion
+function canDrive() {
+    try {
+        if (userAge >= 18 && hasCar) { { return true; } }
+        else { return false; }
+    }
+    catch {
+        console.log("dato invalido")
     }
 }
-//Mostramos solucion en pantalla
-console.log(checkUserRequisites());
+
+//Imprimimos en pantalla resultado
+console.log(canDrive()); 
